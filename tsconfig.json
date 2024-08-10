@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declaration": true, // Emit .d.ts declaration files
+    "declarationDir": "dist/types", // Output directory for declaration files
+    "emitDeclarationOnly": true, // Only emit .d.ts files, no .js output
+    "outDir": "dist", // Output directory for compiled .js files
+    "target": "ESNext", // Specify ECMAScript target version
+    "module": "ESNext", // Specify module code generation
+    "moduleResolution": "node", // Resolve modules using Node.js style
+    "esModuleInterop": true, // Enable compatibility with ES modules
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "baseUrl": "./src/", // Base directory to resolve non-relative module names
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*.ts*"], // Include all .ts files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist directories
+}
